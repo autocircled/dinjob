@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-
+<div class="main-content wrapper">
 	<main id="primary" class="site-main">
 
 		<?php
@@ -36,5 +36,7 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+get_sidebar();?>
+</div>
+<?php
 get_footer();

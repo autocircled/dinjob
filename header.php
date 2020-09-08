@@ -53,9 +53,12 @@
 					array(
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
+						)
+					);
+					?>
 			</nav><!-- #site-navigation -->
+			<div class="search-form">
+					<?php get_search_form(); ?>
+			</div>
 		</div><!-- #wrapper -->
 	</header><!-- #masthead -->

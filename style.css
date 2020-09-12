@@ -545,12 +545,6 @@ textarea {
 --------------------------------------------------------------*/
 #masthead {
   background: #111827; }
-  #masthead .wrapper {
-    width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 20px 0; }
   #masthead .site-branding .site-title, #masthead .site-branding .site-description {
     margin: 0; }
   #masthead .site-branding .site-title a {
@@ -558,6 +552,13 @@ textarea {
   #masthead .site-branding .site-description {
     white-space: nowrap;
     color: #f2f2f2; }
+
+#masthead .wrapper, .main-content.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 0; }
 
 /*--------------------------------------------------------------
 # Components

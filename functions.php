@@ -7,9 +7,9 @@
  * @package Dinjob
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( 'DINJOB_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( 'DINJOB_VERSION', '1.0.0' );
 }
 
 if ( ! function_exists( 'dinjob_setup' ) ) :
@@ -140,10 +140,10 @@ add_action( 'widgets_init', 'dinjob_widgets_init' );
  * Enqueue scripts and styles.
  */
 function dinjob_scripts() {
-	wp_enqueue_style( 'dinjob-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'dinjob-style', get_stylesheet_uri(), array(), DINJOB_VERSION );
 	wp_style_add_data( 'dinjob-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'dinjob-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'dinjob-navigation', get_template_directory_uri() . '/js/navigation.js', array(), DINJOB_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

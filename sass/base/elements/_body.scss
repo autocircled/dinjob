@@ -3,8 +3,8 @@ body {
 }
 .wrapper {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 1170px;
-	margin: 0 auto;
+}
+.wrapper-fluid {
+	display: flex;
+	max-width: 100%;
 }

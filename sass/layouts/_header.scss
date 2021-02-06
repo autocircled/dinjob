@@ -1,0 +1,25 @@
+#masthead {
+
+    .site-branding {
+        width: 25%;
+
+        .site-title {
+            margin: 0;
+            font-size: 20px;
+
+            a,
+            a:hover,
+            a:focus,
+            a:visited {
+                color: $color__link-hover;
+                text-decoration: none;
+            }
+        }
+
+        .site-description {
+            margin: 0;
+            font-size: 16px;
+        }
+
+    }
+}

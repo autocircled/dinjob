@@ -60,6 +60,9 @@
 	a {
 		display: block;
 		text-decoration: none;
+		display: block;
+		text-decoration: none;
+		padding: 15px;
 	}
 
 	.current_page_item > a,
@@ -83,6 +86,8 @@
 
 	.main-navigation ul {
 		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
 	}
 }
 

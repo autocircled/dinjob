@@ -387,7 +387,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #111;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -400,6 +400,8 @@ h4,
 h5,
 h6 {
 	clear: both;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 p {
@@ -457,11 +459,13 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
+	background: #0000002b;
 }
 
 .wrapper {
 	display: flex;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
 .wrapper-fluid {
@@ -478,7 +482,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 0 1.5em;
 }
 
 ul {
@@ -630,6 +634,12 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+#masthead {
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #fff;
+}
+
 #masthead .site-branding {
 	width: 25%;
 }
@@ -654,8 +664,9 @@ textarea {
 
 .site {
 	display: grid;
-	grid-template-columns: auto 25%;
-	grid-template-areas: "header header" "main sidebar" "footer footer";
+	grid-template-columns: auto 33%;
+	column-gap: 20px;
+	grid-template-areas: "main sidebar";
 }
 
 .site-header {
@@ -666,14 +677,24 @@ textarea {
 	grid-area: main;
 	overflow: hidden;
 	/* Resolves issue with <pre> elements forcing full width. */
+	background: #fff;
+	padding: 20px;
 }
 
 .widget-area {
 	grid-area: sidebar;
+	background: #fff;
+	padding: 20px;
 }
 
 .site-footer {
 	grid-area: footer;
+}
+
+.widget-area ul {
+	padding: 0;
+	margin: 0 0 1.5em;
+	list-style: none;
 }
 
 .no-sidebar .site {

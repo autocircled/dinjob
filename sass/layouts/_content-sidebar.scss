@@ -1,10 +1,11 @@
 .site {
 	display: grid;
 	grid-template-columns: auto ($size__site-sidebar);
+	column-gap: 20px;
 	grid-template-areas:
-		"header header"
-		"main sidebar"
-		"footer footer";
+		// "header header"
+		"main sidebar";
+		// "footer footer";
 }
 
 .site-header {
@@ -14,14 +15,24 @@
 .site-main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	background: $color__foreground-body;
+	padding: 20px;
 }
 
 .widget-area {
 	grid-area: sidebar;
+	background: $color__foreground-body;
+	padding: 20px;
 }
 
 .site-footer {
 	grid-area: footer;
+}
+
+.widget-area ul {
+    padding: 0;
+    margin: 0 0 1.5em;
+    list-style: none;
 }
 
 @import "no-sidebar";

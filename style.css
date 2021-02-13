@@ -482,7 +482,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 0 1.5em;
+	margin: 0 0 0 1em;
 }
 
 ul {
@@ -496,7 +496,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 1em;
 }
 
 dt {
@@ -532,6 +532,7 @@ table {
 --------------------------------------------- */
 a {
 	color: #5d6598;
+	text-decoration: none;
 }
 
 a:visited {

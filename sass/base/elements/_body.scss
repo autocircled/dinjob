@@ -6,6 +6,14 @@ body {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+#masthead .wrapper {
+    display: grid;
+    max-width: 1170px;
+    margin: 0 auto;
+    grid-template-areas: "branding navigation";
+    grid-template-columns: 33% auto;
+    column-gap: 20px;
+}
 .wrapper-fluid {
 	display: flex;
 	max-width: 100%;

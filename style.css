@@ -468,6 +468,15 @@ body {
 	margin: 0 auto;
 }
 
+#masthead .wrapper {
+	display: grid;
+	max-width: 1170px;
+	margin: 0 auto;
+	grid-template-areas: "branding navigation";
+	grid-template-columns: 33% auto;
+	column-gap: 20px;
+}
+
 .wrapper-fluid {
 	display: flex;
 	max-width: 100%;
@@ -482,7 +491,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 0 1em;
+	margin: 0 0 0 1.5em;
 }
 
 ul {
@@ -496,7 +505,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1em;
+	margin-left: 1.5em;
 }
 
 dt {
@@ -637,12 +646,12 @@ textarea {
 --------------------------------------------------------------*/
 #masthead {
 	margin-bottom: 20px;
-	padding: 10px;
 	background: #fff;
 }
 
 #masthead .site-branding {
-	width: 25%;
+	width: 100%;
+	padding: 20px;
 }
 
 #masthead .site-branding .site-title {
@@ -710,8 +719,10 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: block;
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .main-navigation ul {
@@ -828,6 +839,34 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.archive .jobs .entry-header-inner {
+	text-align: left;
+}
+
+.archive .jobs .entry-title a {
+	color: #202020;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+.company-link {
+	color: #373737;
+}
+
+.location-links,
+.location-links a {
+	color: #828282;
+}
+
+.archive .jobs .entry-title {
+	margin: 0;
 }
 
 /* Comments

@@ -841,11 +841,13 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-.archive .jobs .entry-header-inner {
+.archive .jobs .entry-header-inner,
+.search .jobs .entry-header-inner {
 	text-align: left;
 }
 
-.archive .jobs .entry-title a {
+.archive .jobs .entry-title a,
+.search .jobs .entry-title a {
 	color: #202020;
 	display: -webkit-box;
 	overflow: hidden;
@@ -865,7 +867,8 @@ textarea {
 	color: #828282;
 }
 
-.archive .jobs .entry-title {
+.archive .jobs .entry-title,
+.search .jobs .entry-title {
 	margin: 0;
 }
 

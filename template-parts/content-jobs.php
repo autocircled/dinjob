@@ -72,14 +72,17 @@ $company_image = get_the_post_thumbnail_url(null, 'post-thumbnails');
         <div class="entry-header-inner section-inner medium">
             <?php
                 
+                
+                if (is_search() || !is_singular() || is_front_page()) {
+                    the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
+                } else {
+                    the_title('<h1 class="entry-title">', '</h1>');
+                }
+                ?>
+                <div class="entry-meta">
+                <?php
                 if ($company_array) {
                     echo '<a class="company-'. $company_array[0]->term_id .' company-link" href="' . esc_url($company_url) . '">' . $company_array[0]->name . '</a>';
-                }
-
-                if (is_search() || !is_singular() || is_front_page()) {
-                    the_title('<h2 class="entry-title heading-size-5"><a href="' . esc_url(get_permalink()) . '">', '</a></h2>');
-                } else {
-                    the_title('<h1 class="entry-title heading-size-5">', '</h1>');
                 }
 
                 if ($job_locations) {
@@ -88,6 +91,7 @@ $company_image = get_the_post_thumbnail_url(null, 'post-thumbnails');
                     echo '</div>';
                 }
             ?>
+                </div><!-- .entry-meta -->
             <div class="clear"></div>
         </div><!-- .entry-header-inner -->
 

@@ -14,36 +14,46 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+    margin: 1.2rem 0;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
 .archive .jobs .entry-header-inner,
 .search .jobs .entry-header-inner {
     text-align: left;
 }
+
 .archive .jobs .entry-title a,
 .search .jobs .entry-title a {
     color: #202020;
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	font-size: 20px;
-	line-height: 1.5;
 	font-weight: 600;
 }
+
 .company-link {
     color: #373737;
 }
+
 .location-links,
 .location-links a {
     color: #828282;
 }
+
 .archive .jobs .entry-title,
 .search .jobs .entry-title {
-    margin: 0;
+	font-size: 1.8rem;
+	line-height: 1.33333;
+}
+
+.entry-meta {
+    line-height: 1.5;
+}
+
+.archive article,
+.search article {
+    border-bottom: 1px solid #ddd;
+	padding: 1.5rem 0;
 }

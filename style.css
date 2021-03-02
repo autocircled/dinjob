@@ -70,8 +70,13 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 /**
@@ -381,6 +386,11 @@ html {
 --------------------------------------------------------------*/
 /* Typography
 --------------------------------------------- */
+html {
+	font-size: 62.5%;
+	line-height: 1.5;
+}
+
 body,
 button,
 input,
@@ -389,8 +399,7 @@ optgroup,
 textarea {
 	color: #111;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
+	font-size: 1.6rem;
 }
 
 h1,
@@ -400,12 +409,6 @@ h4,
 h5,
 h6 {
 	clear: both;
-	margin: 0;
-	margin-bottom: 10px;
-}
-
-p {
-	margin-bottom: 1.5em;
 }
 
 dfn,
@@ -459,7 +462,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #0000002b;
+	background: #fff;
 }
 
 .wrapper {
@@ -833,7 +836,7 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.2rem 0;
 }
 
 .page-links {
@@ -849,12 +852,6 @@ textarea {
 .archive .jobs .entry-title a,
 .search .jobs .entry-title a {
 	color: #202020;
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	font-size: 20px;
-	line-height: 1.5;
 	font-weight: 600;
 }
 
@@ -869,7 +866,18 @@ textarea {
 
 .archive .jobs .entry-title,
 .search .jobs .entry-title {
-	margin: 0;
+	font-size: 1.8rem;
+	line-height: 1.33333;
+}
+
+.entry-meta {
+	line-height: 1.5;
+}
+
+.archive article,
+.search article {
+	border-bottom: 1px solid #ddd;
+	padding: 1.5rem 0;
 }
 
 /* Comments
